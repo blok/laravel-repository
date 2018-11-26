@@ -1,0 +1,13 @@
+<?php
+
+namespace DummyNamespace;
+
+use Blok\Repository\AbstractEloquentRepository;
+
+class DummyClass extends AbstractEloquentRepository
+{
+    public function getModel()
+    {
+        return DummyModel::class;
+    }
+}

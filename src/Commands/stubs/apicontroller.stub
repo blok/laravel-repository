@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use Blok\Repository\Http\Controllers\AbstractApiController;
+
+class UsersController extends AbstractApiController
+{
+    function model()
+    {
+        return DummyRepository::class;
+    }
+}

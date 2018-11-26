@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Repositories\Criterias;
+
+use Blok\Repository\AbstractCriteria;
+
+class DummyClass extends AbstractCriteria
+{
+    pubic function __construct($xxx = 'xxx'){
+      $this->xxx = $xxx;
+    }
+
+    public function apply($model, $repository = null)
+    {
+        return $model->where('xxx', $this->xxx);
+    }
+}
