@@ -1,6 +1,6 @@
 {
   "name": "blok/repository",
-  "description": "A repository",
+  "description": "Opiniated Laravel Repository helper package",
   "license": "MIT",
   "keywords": [
     "repository"
@@ -14,8 +14,7 @@
   ],
   "require": {
     "php": ">=7.0",
-    "illuminate/support": "~5.5",
-    "blok/utils" : "~5.5"
+    "illuminate/support": "~5.5"
   },
   "require-dev": {
     "orchestra/testbench": "~3.6.0",
