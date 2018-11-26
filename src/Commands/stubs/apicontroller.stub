@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace DummyNamespace;
 
 use Blok\Repository\Http\Controllers\AbstractApiController;
 
-class UsersController extends AbstractApiController
+class DummyClass extends AbstractApiController
 {
     function model()
     {

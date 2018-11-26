@@ -50,7 +50,7 @@ class RepositoryMakeCommand extends GeneratorCommand
     {
         $class = str_replace($this->getNamespace($name).'\\', '', $name);
 
-        if ($this->hasOption('model')) {
+        if ($this->option('model')) {
             $model = $this->option('model');
         } else {
             $modelName = "\App\\".str_replace("Repository", "", $class);

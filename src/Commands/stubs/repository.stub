@@ -6,7 +6,7 @@ use Blok\Repository\AbstractEloquentRepository;
 
 class DummyClass extends AbstractEloquentRepository
 {
-    public function getModel()
+    public function model()
     {
         return DummyModel::class;
     }
