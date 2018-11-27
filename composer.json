@@ -1,5 +1,5 @@
 {
-  "name": "blok/repository",
+  "name": "blok/laravel-repository",
   "description": "Opiniated Laravel Repository helper package",
   "license": "MIT",
   "keywords": [
