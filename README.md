@@ -12,7 +12,7 @@ An opiniated way to handle business logic with the Repository pattern. This pack
 Install via composer
 
 ```
-composer require blok/repository
+composer require blok/laravel-repository
 ```
 
 ## Usage
