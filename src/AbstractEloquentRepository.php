@@ -10,7 +10,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;
-use Validator;
 use App;
 
 abstract class AbstractEloquentRepository implements RepositoryContract, CriteriaContract
@@ -19,6 +18,11 @@ abstract class AbstractEloquentRepository implements RepositoryContract, Criteri
      * @var \Illuminate\Foundation\Application|mixed
      */
     public $app;
+
+    /**
+     * @var Collection
+     */
+    public $criteria;
 
     /**
      * @var Model
@@ -42,7 +46,7 @@ abstract class AbstractEloquentRepository implements RepositoryContract, Criteri
      *
      * @return mixed
      */
-    abstract function model();
+    abstract public function model();
 
     /**
      * @return Model
@@ -108,7 +112,7 @@ abstract class AbstractEloquentRepository implements RepositoryContract, Criteri
      * The repository should return the form data needed
      *
      * @param $type
-     * @param null $id
+     * @param  $id
      * @return mixed
      *
      */

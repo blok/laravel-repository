@@ -1,9 +1,9 @@
 # Blok Repository
 
-[![Build Status](https://travis-ci.org/blok/repository.svg?branch=master)](https://travis-ci.org/blok/repository)
-[![Packagist](https://img.shields.io/packagist/v/blok/repository.svg)](https://packagist.org/packages/blok/repository)
-[![Packagist](https://poser.pugx.org/blok/repository/d/total.svg)](https://packagist.org/packages/blok/repository)
-[![Packagist](https://img.shields.io/packagist/l/blok/repository.svg)](https://packagist.org/packages/blok/repository)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/blok/laravel-repository/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/blok/laravel-repository/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/blok/laravel-repository/badges/build.png?b=master)](https://scrutinizer-ci.com/g/blok/laravel-repository/build-status/master)
+[![Packagist](https://poser.pugx.org/blok/laravel-repository/d/total.svg)](https://packagist.org/packages/blok/laravel-repository)
+[![Packagist](https://img.shields.io/packagist/l/blok/laravel-repository.svg)](https://packagist.org/packages/blok/laravel-repository)
 
 An opiniated way to handle business logic with the Repository pattern. This package tends to give you an opiniated structure to handle your business logic inside the repository folder. It comes with handy helpers to let you use this repository inside your controller or api controller without the need to redefine the wheel everytimes.
 

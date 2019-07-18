@@ -48,7 +48,6 @@ abstract class AbstractApiController extends Controller implements ApiController
      * Show the form settings
      *
      * @return \Illuminate\Http\Response
-     * @throws \ReflectionException
      */
     public function create(){
         return $this->model->getForm('create');
@@ -57,8 +56,8 @@ abstract class AbstractApiController extends Controller implements ApiController
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return mixed
      */
     public function store(Request $request)
     {
@@ -69,6 +68,7 @@ abstract class AbstractApiController extends Controller implements ApiController
      * Display the specified resource.
      *
      * @param $id
+     *
      * @return \Illuminate\Database\Eloquent\Model
      */
     public function show($id)
@@ -80,8 +80,8 @@ abstract class AbstractApiController extends Controller implements ApiController
      * Show the form info
      *
      * @param $id
-     * @return \Illuminate\Http\Response
-     * @throws \ReflectionException
+     *
+     * @return mixed
      */
     public function edit($id){
         return $this->model->getForm('edit', $id);
@@ -90,9 +90,10 @@ abstract class AbstractApiController extends Controller implements ApiController
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param \Illuminate\Http\Request $request
      * @param $id
-     * @return \Illuminate\Http\Response
+     *
+     * @return \Illuminate\Http\JsonResponse|mixed
      */
     public function update(Request $request, $id)
     {
@@ -109,7 +110,7 @@ abstract class AbstractApiController extends Controller implements ApiController
      * Remove the specified resource from storage.
      *
      * @param $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response|mixed
      */
     public function destroy($id)
     {

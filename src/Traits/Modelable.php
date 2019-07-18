@@ -9,12 +9,14 @@ namespace Blok\Repository\Traits;
  */
 trait Modelable
 {
+    public $model;
+
     /**
      * Child class should always implements at least a model method and return a class name
      *
      * @return mixed
      */
-    abstract function model();
+    abstract public function model();
 
     public function getModel()
     {
